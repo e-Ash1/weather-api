@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <form class="header--form">
+      <div class="header--left">
+        <input type="text" name="text--city" placeholder="Enter a city">
+        <input type="button" name="btn--submit" value="Submit">
+      </div>
+      </form>
+      
+      <section class="info--form">
+        <div class="header--right">
+          <div class='info--container'>
+            <div class="label">High</div>
+            <span data-current-high></span>
+          </div>
+          <div class='info--container'>
+            <div class="label">Low</div>
+            <span data-current-low></span>
+          </div>
+        <div class='info--container'>
+          <div class="label">Wind</div>
+          <span data-current-wind></span>
+        </div>
+        <div class='info--container'>
+          <div class="label">Precip</div>
+          <span data-current-precip></span>
+        </div>
+      </div>
+      </section>
+
+
+    </header>
+
+    <div class="dark-mode-toggle">
+      <input type="checkbox" id="dark-mode-toggle" />
+      <label for="dark-mode-toggle">Dark Mode</label>
+    </div>
+    
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
